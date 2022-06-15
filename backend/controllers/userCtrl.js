@@ -2,6 +2,8 @@ const Users = require('../models/userModel')
 const Payments = require('../models/paymentModel')
 const bcryptjs = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+// import PaypalExpressBtn from 'react-paypal-express-checkout';
+
 
 const userCtrl = {
     register: async (req, res) =>{
@@ -100,6 +102,7 @@ const userCtrl = {
             return res.status(500).json({msg: err.message})
         }
     },
+    
     addCart: async (req, res) =>{
         try {
             const user = await Users.findById(req.user.id)
