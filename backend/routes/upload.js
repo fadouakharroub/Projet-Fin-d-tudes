@@ -42,22 +42,6 @@ router.post('/upload',auth , authAdmin, (req, res) =>{
         return res.status(500).json({msg: err.message})
     }
 })
-// router.post('/upload',auth , authAdmin, (req, res) => {
-//     try {
-//         let result =  cloudinary.uploader.upload(req.body.image, {
-//             public_id: `${Date.now()}`,
-//             resource_type: 'auto' // jpeg, png
-//         });
-//         res.json({
-//             public_id: result.public_id,
-//             url: result.secure_url,
-//         })
-    
-// } catch(err) {
-//     console.log(err)
-// }
-// }
-// )
 
 
 
