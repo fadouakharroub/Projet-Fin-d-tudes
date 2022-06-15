@@ -1,4 +1,6 @@
 const Products = require('../models/productModel')
+// const Users = require('../models/userModel')
+
 
 // Filter, sorting and paginating
 
