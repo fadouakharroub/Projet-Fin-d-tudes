@@ -1,5 +1,4 @@
 const jwt = require('jsonwebtoken')
-
 const auth = (req, res, next) =>{
     try {
         let token ;
@@ -24,4 +23,4 @@ const auth = (req, res, next) =>{
     }
 }
 
-module.exports = auth
+module.exports = auth;

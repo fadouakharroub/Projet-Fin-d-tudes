@@ -44,5 +44,4 @@ const sold = async (id, quantity, oldSold) =>{
         sold: quantity + oldSold
     })
 }
-//paypal//
 module.exports = paymentCtrl
