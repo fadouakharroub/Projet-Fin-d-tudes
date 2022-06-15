@@ -13,4 +13,4 @@ router.route('/category/:id')
     .put(auth, authAdmin, categoryCtrl.updateCategory)
 
 
-module.exports = router
+module.exports = router;
