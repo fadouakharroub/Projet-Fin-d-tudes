@@ -17,10 +17,7 @@ class APIfeatures {
        let queryStr = JSON.stringify(queryObj)
        queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g, match => '$' + match)
 
-    //    gte = greater than or equal
-    //    lte = lesser than or equal
-    //    lt = lesser than
-    //    gt = greater than
+   
        this.query.find(JSON.parse(queryStr))
          
        return this;
