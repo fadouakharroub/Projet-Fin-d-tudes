@@ -13,7 +13,6 @@ const categoryCtrl = {
     },
     createCategory: async (req, res) =>{
         try {
-            // if user have role = 1 ---> admin
             // only admin can create , delete and update category
             const {name} = req.body;
             const category = await Category.findOne({name})
