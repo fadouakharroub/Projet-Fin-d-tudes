@@ -60,5 +60,5 @@ function UserAPI(token) {
     }
 }
 
-export default UserAPI
+export default UserAPI;
  

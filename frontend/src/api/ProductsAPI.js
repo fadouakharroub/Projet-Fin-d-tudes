@@ -31,4 +31,4 @@ function ProductsAPI() {
     }
 }
 
-export default ProductsAPI
+export default ProductsAPI;

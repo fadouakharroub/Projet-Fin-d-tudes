@@ -19,4 +19,4 @@ function CategoriesAPI() {
     }
 }
 
-export default CategoriesAPI
+export default CategoriesAPI;
