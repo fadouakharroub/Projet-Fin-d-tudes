@@ -8,8 +8,8 @@ const initialState = {
     product_id: '',
     title: '',
     price: 0,
-    description: 'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
-    content: 'Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
     category: '',
     _id: ''
 }
@@ -56,10 +56,10 @@ function CreateProduct() {
             
             if(!file) return alert("File not exist.")
 
-            if(file.size > 1024 * 1024) // 1mb
+            if(file.size > 1024 * 1024) 
                 return alert("Size too large!")
 
-            if(file.type !== 'image/jpeg' && file.type !== 'image/png') // 1mb
+            if(file.type !== 'image/jpeg' && file.type !== 'image/png') 
                 return alert("File format is incorrect.")
 
             let formData = new FormData()

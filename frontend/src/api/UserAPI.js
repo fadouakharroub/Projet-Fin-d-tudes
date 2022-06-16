@@ -5,7 +5,6 @@ function UserAPI(token) {
     const [isLogged, setIsLogged] = useState(false)
     const [isAdmin, setIsAdmin] = useState(false)
     const [cart, setCart] = useState([])
-    const [history, setHistory] = useState([])
 
     useEffect(() =>{
         if(token){
@@ -14,7 +13,6 @@ function UserAPI(token) {
                     const res = await axios.get('http://localhost:4000/user/infor', {
                         headers: {Authorization: token}
                     })
-
                     setIsLogged(true)
                     res.data.role === 1 ? setIsAdmin(true) : setIsAdmin(false)
 
@@ -56,7 +54,6 @@ function UserAPI(token) {
         isAdmin: [isAdmin, setIsAdmin],
         cart: [cart, setCart],
         addCart: addCart,
-        history: [history, setHistory]
     }
 }
 

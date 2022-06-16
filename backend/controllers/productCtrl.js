@@ -1,16 +1,14 @@
 const Products = require('../models/productModel')
 
-
 // Filter, sorting and paginating
-
 class APIfeatures {
     constructor(query, queryString){
         this.query = query;
         this.queryString = queryString;
     }
     filtering(){
-       const queryObj = {...this.queryString} //queryString = req.query
-
+       const queryObj = {...this.queryString} 
+       
        const excludedFields = ['page', 'sort', 'limit']
        excludedFields.forEach(el => delete(queryObj[el]))
        

@@ -12,7 +12,7 @@ function Header() {
     const [isAdmin] = state.userAPI.isAdmin
     const [cart] = state.userAPI.cart
     const [menu, setMenu] = useState(false)
-
+console.log(state.userAPI)
     const logoutUser = async () =>{
         await axios.get('http://localhost:4000/user/logout',{withCredentials: true})
         
@@ -33,7 +33,6 @@ function Header() {
     const loggedRouter = () =>{
         return(
             <>
-                <li><Link to="/history">History</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
             </>
         )
@@ -92,7 +91,7 @@ function Header() {
     </div>
   </div>
             
-        </header>
+        </header> 
         
     )
     

@@ -1,5 +1,8 @@
 const Users = require('../models/userModel')
 
+
+ // if user have role = 1 ---> admin
+
 const authAdmin = async (req, res, next) =>{
     try {
         const user = await Users.findOne({

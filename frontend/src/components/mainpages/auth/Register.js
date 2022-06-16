@@ -21,7 +21,6 @@ function Register() {
             localStorage.setItem('firstLogin', true)
 
             
-            // window.location.href = "/";
             navigate('/login')
         } catch (err) {
             alert(err.response.data.msg)
